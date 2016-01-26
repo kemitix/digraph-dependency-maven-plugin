@@ -23,11 +23,13 @@ class DotFileFormatNested extends AbstractDotFileFormat {
     String renderNode(final Node<PackageData> node) {
         final StringBuilder render = new StringBuilder();
         final String clusterId = getPath(node, "_");
-        final String nodeId = node.getData().getName();
+        final String nodeId = getPath(node, ".");
+        final String nodeName = node.getData().getName();
         final String headerFormat
                 = "subgraph \"cluster{0}\"'{'"
-                + "label=\"{1}\";\"{1}\"[style=dotted]\n";
-        render.append(MessageFormat.format(headerFormat, clusterId, nodeId));
+                + "label=\"{1}\";\"{2}\"[label=\"{1}\",style=dotted]\n";
+        render.append(MessageFormat.format(
+                headerFormat, clusterId, nodeName, nodeId));
         node.getChildren().stream()
                 .sorted(new NodePackageDataComparator())
                 .forEach((Node<PackageData> child) -> {
