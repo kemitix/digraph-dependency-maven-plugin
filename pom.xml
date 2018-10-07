@@ -31,7 +31,7 @@
     <properties>
         <java.version>1.8</java.version>
         <tiles-maven-plugin.version>2.12</tiles-maven-plugin.version>
-        <kemitix-tiles.version>0.8.1</kemitix-tiles.version>
+        <kemitix-maven-tiles.version>1.2.0</kemitix-maven-tiles.version>
         <kemitix-checkstyle.version>4.0.1</kemitix-checkstyle.version>
         <maven.version>3.5.4</maven.version>
         <maven-resolver.version>1.1.1</maven-resolver.version>
@@ -52,7 +52,6 @@
         <digraph-dependency.basePackage>net.kemitix.dependency.digraph.maven.plugin</digraph-dependency.basePackage>
         <jacoco-class-line-covered-ratio>0</jacoco-class-line-covered-ratio>
         <jacoco-class-instruction-covered-ratio>0</jacoco-class-instruction-covered-ratio>
-        <!--<jacoco-class-missed-count-maximum></jacoco-class-missed-count-maximum>-->
     </properties>
 
     <dependencies>
@@ -168,8 +167,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <tiles>
-                        <tile>net.kemitix.tiles:all:${kemitix-tiles.version}</tile>
-                        <!--<tile>net.kemitix.tiles:pmd-strict:${kemitix-tiles.version}</tile>-->
+                        <tile>net.kemitix.tiles:all:${kemitix-maven-tiles.version}</tile>
                         <tile>net.kemitix.checkstyle:tile:${kemitix-checkstyle.version}</tile>
                     </tiles>
                 </configuration>
