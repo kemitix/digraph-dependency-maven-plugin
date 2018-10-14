@@ -38,6 +38,6 @@ interface SourceFileProvider {
      *
      * @return a list of files
      */
-    List<File> process(List<String> directories);
+    public abstract List<File> process(List<String> directories);
 
 }

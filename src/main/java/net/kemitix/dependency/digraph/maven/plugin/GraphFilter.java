@@ -39,7 +39,7 @@ interface GraphFilter {
      *
      * @return The filter
      */
-    static GraphFilter of(
+    public static GraphFilter of(
             final String exclude, final String include, final NodePathGenerator nodePathGenerator
                          ) {
         return new DefaultGraphFilter(exclude, include, nodePathGenerator);
@@ -52,7 +52,7 @@ interface GraphFilter {
      *
      * @return true if the node should be excluded from the diagram, otherwise true to include it
      */
-    boolean filterNodes(Node<PackageData> packageDataNode);
+    public abstract boolean filterNodes(Node<PackageData> packageDataNode);
 
     /**
      * Checks if the node is excluded.
@@ -61,7 +61,7 @@ interface GraphFilter {
      *
      * @return true if the node matches the exclude criteria
      */
-    boolean isExcluded(Node<PackageData> packageDataNode);
+    public abstract boolean isExcluded(Node<PackageData> packageDataNode);
 
     /**
      * Checks if the node is included.
@@ -70,5 +70,5 @@ interface GraphFilter {
      *
      * @return true if the node matches the include criteria
      */
-    boolean isIncluded(Node<PackageData> packageDataNode);
+    public abstract boolean isIncluded(Node<PackageData> packageDataNode);
 }

@@ -38,6 +38,6 @@ interface DotFileFormatFactory {
      *
      * @return the dot file format generator
      */
-    DotFileFormat create(String format, Node<PackageData> base);
+    public abstract DotFileFormat create(String format, Node<PackageData> base);
 
 }

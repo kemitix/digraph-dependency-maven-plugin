@@ -38,6 +38,6 @@ interface FileLoader {
      *
      * @return the file input stream or null if file not found
      */
-    InputStream asInputStream(File file);
+    public abstract InputStream asInputStream(File file);
 
 }

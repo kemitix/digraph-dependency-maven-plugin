@@ -36,6 +36,6 @@ interface SourceFileAnalyser {
      * @param dependencyData the dependency data
      * @param input          the stream of the file to analyse
      */
-    void analyse(DependencyData dependencyData, InputStream input);
+    public abstract void analyse(DependencyData dependencyData, InputStream input);
 
 }

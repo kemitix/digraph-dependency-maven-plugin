@@ -38,6 +38,6 @@ interface SourceFileVisitor extends FileVisitor<Path> {
      *
      * @return the list of Java source files
      */
-    List<File> getJavaFiles();
+    public abstract List<File> getJavaFiles();
 
 }

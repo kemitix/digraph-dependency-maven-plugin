@@ -33,5 +33,5 @@ public interface GraphElement {
      *
      * @return the rendered graph element
      */
-    String render();
+    public abstract String render();
 }

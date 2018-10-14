@@ -37,5 +37,5 @@ interface TreeFilter {
      *
      * @return the root of the new tree
      */
-    Node<PackageData> filterTree(Node<PackageData> root);
+    public abstract Node<PackageData> filterTree(Node<PackageData> root);
 }

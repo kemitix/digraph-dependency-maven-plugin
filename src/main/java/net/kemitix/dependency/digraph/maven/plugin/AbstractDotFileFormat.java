@@ -325,7 +325,7 @@ public abstract class AbstractDotFileFormat implements DotFileFormat {
          * @param container The container to add the node and its children to
          * @param node      The node to add to the container
          */
-        void injectNodes(
+        public abstract void injectNodes(
                 ElementContainer container, Node<PackageData> node
                         );
 
@@ -343,7 +343,7 @@ public abstract class AbstractDotFileFormat implements DotFileFormat {
          * @param container The container to add the usages to
          * @param node      The node to scan to find uses
          */
-        void injectUsages(
+        public abstract void injectUsages(
                 ElementContainer container, Node<PackageData> node
                          );
 

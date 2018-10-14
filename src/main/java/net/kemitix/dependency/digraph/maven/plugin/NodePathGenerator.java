@@ -39,7 +39,7 @@ interface NodePathGenerator {
      *
      * @return the path of the node from the base
      */
-    String getPath(
+    public abstract String getPath(
             Node<PackageData> node, Node<PackageData> base, String delimiter
                   );
 

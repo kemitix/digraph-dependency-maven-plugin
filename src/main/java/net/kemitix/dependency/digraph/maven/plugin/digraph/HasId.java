@@ -33,5 +33,5 @@ public interface HasId {
      *
      * @return the id
      */
-    String getId();
+    public abstract String getId();
 }

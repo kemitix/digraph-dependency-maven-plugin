@@ -37,24 +37,24 @@ interface DependencyData {
      * @param user     the package that is using the import
      * @param imported the package that contains the class that is being imported
      */
-    void addDependency(String user, String imported);
+    public abstract void addDependency(String user, String imported);
 
     /**
      * Returns the base node.
      *
      * @return the base node
      */
-    Node<PackageData> getBaseNode();
+    public abstract Node<PackageData> getBaseNode();
 
     /**
      * Log the statue of the dependency data.
      *
      * @param log the log to send the output
      */
-    void debugLog(Log log);
+    public abstract void debugLog(Log log);
 
     /**
      * Update names of all nodes.
      */
-    void updateNames();
+    public abstract void updateNames();
 }

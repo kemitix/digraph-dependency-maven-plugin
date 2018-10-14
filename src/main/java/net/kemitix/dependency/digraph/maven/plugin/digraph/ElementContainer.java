@@ -35,7 +35,7 @@ public interface ElementContainer {
      *
      * @return the elements
      */
-    Collection<GraphElement> getElements();
+    public abstract Collection<GraphElement> getElements();
 
     /**
      * Adds an element to the container.
@@ -44,6 +44,6 @@ public interface ElementContainer {
      *
      * @return true if the element was added
      */
-    boolean add(GraphElement element);
+    public abstract boolean add(GraphElement element);
 
 }

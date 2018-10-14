@@ -38,6 +38,6 @@ interface ReportWriter {
      *
      * @throws IOException if there is an error writing the report
      */
-    void write(String report, String file) throws IOException;
+    public abstract void write(String report, String file) throws IOException;
 
 }

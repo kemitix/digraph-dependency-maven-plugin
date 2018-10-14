@@ -37,5 +37,5 @@ public interface HasPackageDataNode {
      *
      * @return the package data node
      */
-    Node<PackageData> getPackageDataNode();
+    public abstract Node<PackageData> getPackageDataNode();
 }

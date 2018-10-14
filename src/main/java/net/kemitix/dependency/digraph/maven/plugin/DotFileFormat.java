@@ -40,7 +40,7 @@ public interface DotFileFormat {
      *
      * @return the formatted report
      */
-    String renderReport();
+    public abstract String renderReport();
 
     /**
      * Render the digraph element as a string.
@@ -49,7 +49,7 @@ public interface DotFileFormat {
      *
      * @return the rendered digraph
      */
-    String render(Digraph digraph);
+    public abstract String render(Digraph digraph);
 
     /**
      * Render the edge element as a string.
@@ -58,7 +58,7 @@ public interface DotFileFormat {
      *
      * @return the rendered edge element
      */
-    String render(EdgeElement edgeElement);
+    public abstract String render(EdgeElement edgeElement);
 
     /**
      * Render the node element as a string.
@@ -67,7 +67,7 @@ public interface DotFileFormat {
      *
      * @return the rendered node element
      */
-    String render(NodeElement nodeElement);
+    public abstract String render(NodeElement nodeElement);
 
     /**
      * Render the node properties as a string.
@@ -76,7 +76,7 @@ public interface DotFileFormat {
      *
      * @return the rendered node properties
      */
-    String render(NodeProperties nodeProperties);
+    public abstract String render(NodeProperties nodeProperties);
 
     /**
      * Render the property element as a string.
@@ -85,7 +85,7 @@ public interface DotFileFormat {
      *
      * @return the rendered property element
      */
-    String render(PropertyElement propertyElement);
+    public abstract String render(PropertyElement propertyElement);
 
     /**
      * Render the subgraph as a string.
@@ -94,5 +94,5 @@ public interface DotFileFormat {
      *
      * @return the rendered subgraph
      */
-    String render(Subgraph subgraph);
+    public abstract String render(Subgraph subgraph);
 }

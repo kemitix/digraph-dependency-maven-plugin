@@ -33,5 +33,5 @@ public interface HasLabel {
      *
      * @return the label
      */
-    String getLabel();
+    public abstract String getLabel();
 }

@@ -35,6 +35,6 @@ interface ReportGenerator {
      *
      * @return the report
      */
-    String generate(DotFileFormat dotFileFormat);
+    public abstract String generate(DotFileFormat dotFileFormat);
 
 }
