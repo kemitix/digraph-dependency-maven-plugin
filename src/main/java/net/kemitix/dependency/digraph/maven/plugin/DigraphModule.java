@@ -40,6 +40,7 @@ class DigraphModule extends AbstractModule {
     private final GraphFilter graphFilter;
 
     @Override
+    @SuppressWarnings("javancss")
     protected void configure() {
         bind(DigraphMojo.class).toInstance(digraphMojo);
         bind(GraphFilter.class).toInstance(graphFilter);

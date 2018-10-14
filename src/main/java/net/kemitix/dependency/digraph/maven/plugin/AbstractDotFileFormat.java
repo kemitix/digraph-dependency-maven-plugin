@@ -50,6 +50,7 @@ import java.util.stream.Collectors;
  * @author Paul Campbell (pcampbell@kemitix.net)
  */
 @Immutable
+@SuppressWarnings({"methodcount", "classfanoutcomplexity"})
 public abstract class AbstractDotFileFormat implements DotFileFormat {
 
     protected static final String CLOSE_BRACE = "]";
