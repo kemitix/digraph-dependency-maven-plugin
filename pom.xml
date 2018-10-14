@@ -50,8 +50,8 @@
         <lombok.version>1.18.2</lombok.version>
 
         <digraph-dependency.basePackage>net.kemitix.dependency.digraph.maven.plugin</digraph-dependency.basePackage>
-        <jacoco-class-line-covered-ratio>0</jacoco-class-line-covered-ratio>
-        <jacoco-class-instruction-covered-ratio>0</jacoco-class-instruction-covered-ratio>
+        <jacoco-class-line-covered-ratio>80%</jacoco-class-line-covered-ratio>
+        <jacoco-class-instruction-covered-ratio>81%</jacoco-class-instruction-covered-ratio>
     </properties>
 
     <dependencies>
